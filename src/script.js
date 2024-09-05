@@ -1,12 +1,29 @@
-function toggleDropdown() {
-    const dropdown = document.getElementById("dropdown");
-    dropdown.classList.toggle("hidden");
-}
+// function toggleDropdown() {
+//     const dropdown = document.getElementById("dropdown");
+//     dropdown.classList.toggle("hidden");
+// }
 
-function toggleSelectBox() {
-    const dropdown = document.getElementById("SearchPostcode");
-    selectBox.classList.toggle("hidden");
-}
+// function toggleSelectBox() {
+//     const dropdown = document.getElementById("SearchPostcode");
+//     selectBox.classList.toggle("hidden");
+// }
+
+// ! index.html
+$("#dropdownButton").click(()=>{
+    $("#dropdown").toggleClass("hidden")
+})
+
+$(".dropDownItems").click(function() {
+    let data = $(this).html();
+    console.log(data);
+    $("#dropdownButton").html(data)
+    $("#dropdown").fadeOut(200)
+    $("#dropdownButton").click(()=>{
+        $("#dropdown").fadeIn(200)
+    })
+});
+// ! index.html
+
 
 // ! adjust.html
 

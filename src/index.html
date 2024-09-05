@@ -65,8 +65,8 @@
   <main>
     <!-- ! Search Property Section Start -->
      <section class="bg-back-grey h-screen">
-    <div class="w-full sm:h-screen h-full py-5 bg-back-grey flex items-center justify-center md:px-0 px-5">
-        <div class="bg-white rounded-[16px] p-5 w-[620px] mx-auto">
+    <div class="w-full md:h-screen h-full py-5 bg-back-grey flex items-start justify-center md:px-0 px-5">
+        <div class="bg-white rounded-[16px] p-5 md:mt-12 mt-6 w-[620px] mx-auto">
             <div>
                 <h3 class="text-[20px] font-bold">To get started: Search for your property</h3>
                 <p class="text-[14px] font-normal text-grey-1">Search for an address or select the “Retrofit Plan Code” tab to resume an existing journey.</p>
@@ -79,7 +79,7 @@
                 <div class="grid grid-cols-[70%_28%]  items-center justify-between">
                     <input type="text" name="" id="" placeholder="Search Postcode"
                         class="rounded-[30px] bg-grey-5 px-4 md:py-3 py-2 text-[14px] font-normal text-theme-black">
-                    <button id="SearchPostcode" onclick="toggleSelectBox()"
+                    <button id="SearchPostcode" 
                         class="lg:block hidden  py-[10px] md:px-4 px-1 border border-Midnight_Blue rounded-full font-semibold md:text-sm text-[12px] text-center text-Midnight_Blue ">Search Postcode
                         </button>
                         <button class="lg:hidden block  py-[10px] md:px-4 px-1 border border-Midnight_Blue rounded-full font-semibold md:text-sm text-[12px] text-center text-Midnight_Blue ">Search</button> 
@@ -94,8 +94,8 @@
                         <option value="DE">Germany</option>
                       </select> -->
                 
-                    <button id="dropdownButton" onclick="toggleDropdown()"
-                        class="border flex  items-center justify-between border-grey-2 rounded-[30px] w-full text-sm font-normal text-theme-black py-2.5 px-4"
+                    <button id="dropdownButton" 
+                        class="border flex  items-center justify-between border-grey-2 rounded-[30px] w-full md:text-sm text-[12px] font-normal text-theme-black py-2.5 px-4"
                         type="button">Select Address
                         <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 10 6">
@@ -105,21 +105,21 @@
                     </button>
                 
                 
-                    <div id="dropdown" class="w-[95%]  mx-auto relative top-2  bg-white duration-500">
+                    <div id="dropdown" class="hidden w-[95%]  mx-auto relative top-2  bg-white duration-500">
                         <ul class="pt-2 text-sm text-gray-700 rounded-xl border border-grey-2">
-                            <li class="border-b-2 p-3 border-grey-2 text-theme-black text-sm font-normal">10 Buckingham Palace Road,
+                            <li class="dropDownItems border-b-2 p-3 border-grey-2 text-theme-black md:text-sm text-[12px] font-normal">10 Buckingham Palace Road,
                                 London, SW1A 1AA</li>
-                            <li class="border-b-2 p-3 border-grey-2 text-theme-black text-sm font-normal">22 Westminster Abbey Street,
+                            <li class="dropDownItems border-b-2 p-3 border-grey-2 text-theme-black md:text-sm text-[12px] font-normal">22 Westminster Abbey Street,
                                 London, SW1A 1AA </li>
-                            <li class="border-b-2 p-3 border-grey-2 text-theme-black text-sm font-normal">35 Downing Street, London,
+                            <li class="dropDownItems border-b-2 p-3 border-grey-2 text-theme-black md:text-sm text-[12px] font-normal">35 Downing Street, London,
                                 SW1A 1AA </li>
-                            <li class="border-b-2 p-3 border-grey-2 text-theme-black text-sm font-normal">48 Trafalgar Square, London,
+                            <li class="dropDownItems border-b-2 p-3 border-grey-2 text-theme-black md:text-sm text-[12px] font-normal">48 Trafalgar Square, London,
                                 SW1A 1AA</li>
-                            <li class="border-b-2 p-3 border-grey-2 text-theme-black text-sm font-normal">57 Victoria Embankment,
+                            <li class="dropDownItems border-b-2 p-3 border-grey-2 text-theme-black md:text-sm text-[12px] font-normal">57 Victoria Embankment,
                                 London, SW1A 1AA</li>
-                            <li class="border-b-2 p-3 border-grey-2 text-theme-black text-sm font-normal">14 Parliament Square, London,
+                            <li class="dropDownItems border-b-2 p-3 border-grey-2 text-theme-black md:text-sm text-[12px] font-normal">14 Parliament Square, London,
                                 SW1A 1AA</li>
-                            <li class=" p-3 text-theme-black text-sm font-normal">29 St. James's Park, London, SW1A 1AA</li>
+                            <li class="dropDownItems p-3 text-theme-black md:text-sm text-[12px] font-normal">29 St. James's Park, London, SW1A 1AA</li>
                         </ul>
                     </div>
                 
@@ -141,6 +141,8 @@
     <!-- ! Search Property Section End -->
 
   </main>
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
