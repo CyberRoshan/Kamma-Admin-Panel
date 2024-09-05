@@ -7,9 +7,11 @@
   <title>Kamma Admin Panel</title>
 </head>
 <body class="font-Nunito">
+    <!-- ! Header Section Start -->
   <header class="">
-    <img class="mx-auto md:w-auto w-[80%] lg:p-5  p-3" src="assets/Kamma_logo.png" alt="">
-    <nav class="grid md:grid-cols-5 sm:grid-cols-2 grid-cols-1 ">
+    <img class="mx-auto lg:w-auto md:w-[40%] w-[50%] lg:p-5  p-3" src="assets/Kamma_logo.png" alt="">
+    <!-- ! NavBar Section Start -->
+    <nav class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
         <div class="py-3 sm:block flex sm:justify-normal justify-between sm:items-start items-center relative px-6 border border-grey-2 before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:bottom-0 before:p-0.5">
             <div>
                 <div class="text-[12px] font-bold text-coral sm:block hidden">Current</div>
@@ -31,7 +33,7 @@
                 <span class="text-[14px] font-normal text-grey-1">About your property</span>
             </div>
         </div>
-        <div class="py-3 px-6 lg:block hidden border border-grey-2">
+        <div class="py-3 px-6 md:block hidden border border-grey-2">
             <div>
                 <div class="text-[12px] font-bold text-grey-3 sm:block hidden">Not done yet
                 </div>
@@ -56,25 +58,31 @@
             </div>
         </div>
     </nav>
+    <!-- ! NavBar Section End -->
+
   </header>
+  <!-- ! Header Section End -->
   <main>
-    <section class="w-full h-screen bg-back-grey flex items-center justify-center border border-red-600">
+    <!-- ! Search Property Section Start -->
+     <section class="bg-back-grey h-screen">
+    <div class="w-full sm:h-screen h-full py-5 bg-back-grey flex items-center justify-center md:px-0 px-5">
         <div class="bg-white rounded-[16px] p-5 w-[620px] mx-auto">
             <div>
                 <h3 class="text-[20px] font-bold">To get started: Search for your property</h3>
                 <p class="text-[14px] font-normal text-grey-1">Search for an address or select the “Retrofit Plan Code” tab to resume an existing journey.</p>
             </div>
             <div class="border-b-2 border-grey-2">
-                <div class="py-3 px-4 relative inline-block text-[14px] text-center font-semibold text-Midnight_Blue before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:bottom-[-2.5px] before:p-0.5">New Search</div>
-                <div class="py-3 px-4 relative inline-block text-[14px] text-grey-4 text-center font-semibold">Resume Previous Search</div>
+                <div class="py-3 md:px-4 px-2 relative inline-block sm:text-[14px] text-[12px] text-center font-semibold text-Midnight_Blue before:w-full before:bg-turquoise before:block before:absolute before:left-0 before:bottom-[-2.5px] before:p-0.5">New Search</div>
+                <div class="py-3 md:px-4 px-2 relative inline-block sm:text-[14px] text-[12px] text-grey-4 text-center font-semibold">Resume Previous Search</div>
             </div>
             <form class="py-5">
-                <div class="grid grid-cols-[70%_28%] items-center justify-between">
-                    <input type="text" required name="" id="" placeholder="Search Postcode"
-                        class="rounded-[30px] bg-grey-5 px-4 py-3 text-[14px] font-normal text-theme-black">
+                <div class="grid grid-cols-[70%_28%]  items-center justify-between">
+                    <input type="text" name="" id="" placeholder="Search Postcode"
+                        class="rounded-[30px] bg-grey-5 px-4 md:py-3 py-2 text-[14px] font-normal text-theme-black">
                     <button id="SearchPostcode" onclick="toggleSelectBox()"
-                        class="py-[10px] px-4 border border-Midnight_Blue rounded-full font-semibold text-sm text-center text-Midnight_Blue ">Search
-                        Postcode</button>
+                        class="lg:block hidden  py-[10px] md:px-4 px-1 border border-Midnight_Blue rounded-full font-semibold md:text-sm text-[12px] text-center text-Midnight_Blue ">Search Postcode
+                        </button>
+                        <button class="lg:hidden block  py-[10px] md:px-4 px-1 border border-Midnight_Blue rounded-full font-semibold md:text-sm text-[12px] text-center text-Midnight_Blue ">Search</button> 
                 </div>
                 <div id="selectBox" class="my-5">
 
@@ -117,12 +125,21 @@
                 
                 </div>
                 <div class="flex items-center justify-between mt-5">
-                    <button class="py-[10px] px-6 border rounded-full border-Midnight_Blue text-sm text-center font-semibold">Cancel</button>
-                    <button disabled class="py-[10px] px-6 disabled:text-grey-2 disabled:bg-white disabled:border-grey-2  text-white bg-Midnight_Blue border rounded-full border-Midnight_Blue text-sm text-center font-semibold">Submit</button>
+                    <button class="md:py-[10px] py-2 md:px-6 px-4 border rounded-full border-Midnight_Blue text-sm text-center font-semibold">Cancel</button>
+                    <!-- <button disabled class="md:py-[10px] py-2 md:px-6 px-4 disabled:text-grey-2 disabled:bg-white disabled:border-grey-2  text-white bg-Midnight_Blue border rounded-full border-Midnight_Blue text-sm text-center font-semibold">Submit</button> -->
+                    <!-- ? Without disabled Submit Button -->
+                     
+                    <button class="md:py-[10px] py-2 md:px-6 px-4 disabled:text-grey-2 disabled:bg-white disabled:border-grey-2  text-white bg-Midnight_Blue border rounded-full border-Midnight_Blue text-sm text-center font-semibold">
+                        <a href="adjust.html">Submit</a></button>
+                    <!-- ? Without disabled Submit Button -->
                 </div>
             </form>
         </div>
+    </div>
     </section>
+
+    <!-- ! Search Property Section End -->
+
   </main>
   <script src="script.js"></script>
 </body>

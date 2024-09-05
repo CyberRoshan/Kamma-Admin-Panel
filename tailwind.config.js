@@ -17,9 +17,14 @@ module.exports = {
         'back-grey':'#F4F6F8',
         'turquoise': '#19D3C5',
         'Midnight_Blue': '#34485C',
+        'yellow': '#FFC844',
 
 
-      }
+      },
+      boxShadow: {
+        'custom-orange': '0 4px 6px -1px rgba(243, 161, 83, 0.13)',
+        'custom-orange-17': '0 4px 6px -1px rgba(243, 161, 83, 0.17)',
+      },
     },
   },
   plugins: [],
