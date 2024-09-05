@@ -84,7 +84,7 @@
         </section>
         <!-- ! Plan Code Section End -->
         <!-- ! EPC Rating Section Start -->
-        <section class="bg-back-grey w-full h-full">
+        <section class="bg-back-grey w-full ">
             <div class="max-w-[1320px] mx-auto pt-[30px] px-5 pb-24">
                 <div
                     class="rounded-2xl bg-white grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-5 border border-[rgba(255,200,68,0.2)] shadow-custom-orange p-5">
@@ -154,15 +154,18 @@
 
 
                 <div
-                    class="md:bg-white bg-transparent md:rounded-2xl rounded-none flex md:gap-0 gap-4 items-center md:flex-row flex-col  justify-between  lg:py-10 lg:px-5 md:px-3 md:py-6 px-0 py-0 ">
+                    id="adjustTabbingBox"
+                    class="relative 0 md:bg-white bg-transparent md:rounded-t-lg rounded-none flex md:gap-0 gap-4 items-center md:flex-row flex-col  justify-between  lg:py-10 lg:px-5 md:px-3 md:py-6 px-0 py-0 ">
+                    <div id="navGreyLine" class="lg:block hidden border-b-2 b border-grey-2 w-full absolute top-[75%] left-0"></div>
                     <div
-                        class="flex md:w-auto w-full items-center md:justify-normal justify-center gap-2 md:border-none border border-grey-4 md:rounded-none rounded-lg">
+                        id="typeOfProperty"
+                        class="relative cursor-pointer flex md:w-auto w-full items-center md:justify-normal justify-center gap-2 md:border-none border border-grey-4 md:rounded-none rounded-lg before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:top-[103%] before:p-0.5">
                         <img src="assets/type-of-property.png" alt="Type of Property">
                         <div>
                             <h5 class="font-bold text-[16px] text-theme-black">Type of Property</h5>
-                            <p class="font-normal text-sm text-grey-3">A Semi-Detached House</p>
+                            <p id="p1" class="font-normal text-sm text-grey-3">A Semi-Detached House</p>
                         </div>
-                        <svg class="lg:block md:hidden block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        <svg id="svg1" class="lg:block md:hidden block" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M19.733 20.2471H13.356C12.942 20.2471 12.606 19.9111 12.606 19.4971C12.606 19.0831 12.942 18.7471 13.356 18.7471H19.733C20.147 18.7471 20.483 19.0831 20.483 19.4971C20.483 19.9111 20.147 20.2471 19.733 20.2471Z"
@@ -187,13 +190,14 @@
                     </svg>
 
                     <div
-                        class="flex md:w-auto w-full md:justify-normal justify-center items-center gap-2 md:border-none  border border-grey-4 md:rounded-none rounded-lg">
+                        id="ageOfProperty"
+                        class="relative cursor-pointer flex md:w-auto w-full md:justify-normal justify-center items-center gap-2 md:border-none  border border-grey-4 md:rounded-none rounded-lg">
                         <img src="assets/age-of-the-property.svg" alt="Type of Property">
                         <div>
-                            <h5 class="font-bold text-[16px] text-theme-black">Type of Property</h5>
-                            <p class="font-normal text-sm text-grey-3">A Semi-Detached House</p>
+                            <h5 class="font-bold text-[16px] text-theme-black">Age of Property</h5>
+                            <p id="p2" class="font-normal text-sm text-grey-3">Built 1930s</p>
                         </div>
-                        <svg class="lg:block md:hidden block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        <svg id="svg2" class="lg:block md:hidden block" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M19.733 20.2471H13.356C12.942 20.2471 12.606 19.9111 12.606 19.4971C12.606 19.0831 12.942 18.7471 13.356 18.7471H19.733C20.147 18.7471 20.483 19.0831 20.483 19.4971C20.483 19.9111 20.147 20.2471 19.733 20.2471Z"
@@ -218,13 +222,14 @@
                     </svg>
 
                     <div
-                        class="flex md:w-auto w-full md:justify-normal justify-center items-center gap-2 md:border-none  border border-grey-4 md:rounded-none rounded-lg">
+                    id="FloorArea"
+                        class="relative flex md:w-auto w-full md:justify-normal justify-center items-center gap-2 md:border-none  border border-grey-4 md:rounded-none rounded-lg">
                         <img src="assets/total-floor-area.svg" alt="Type of Property">
                         <div>
-                            <h5 class="font-bold text-[16px] text-theme-black">Type of Property</h5>
-                            <p class="font-normal text-sm text-grey-3">A Semi-Detached House</p>
+                            <h5 class="font-bold text-[16px] text-theme-black">Floor Area</h5>
+                            <p id="p3" class="font-normal text-sm text-grey-3">1,206 sqft (112 sqm)</p>
                         </div>
-                        <svg class="lg:block md:hidden block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        <svg id="svg3" class="lg:block md:hidden block" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M19.733 20.2471H13.356C12.942 20.2471 12.606 19.9111 12.606 19.4971C12.606 19.0831 12.942 18.7471 13.356 18.7471H19.733C20.147 18.7471 20.483 19.0831 20.483 19.4971C20.483 19.9111 20.147 20.2471 19.733 20.2471Z"
@@ -238,10 +243,136 @@
 
 
                 </div>
+                <!-- ! Type of Property Detail Section Start -->
+                <div id="TypePropertyDetailSection" class="md:block hidden bg-white px-5 pt-5 rounded-b-2xl -700">
+                    <h4 class="text-[18px] font-bold uppercase text-theme-black my-5">Property is a</h4>
+                    <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+                        <div class="relative rounded-lg py-3 border border-coral flex flex-col items-center">
+                            <svg class="absolute right-0 top-0 " width="36" height="35" viewBox="0 0 36 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
+                                <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <img src="assets/type-of-property (1).svg" alt="Houses">
+                            <h5 class="text-[16px] font-semibold text-center text-theme-black">House</h5>
+                        </div>
+                        <div class="rounded-lg py-3 border border-grey-2 flex flex-col items-center">
+                            <img src="assets/flat 1.svg" alt="Flat">
+                                
+                            <h5 class="text-[16px] font-semibold text-center text-theme-black">Flat</h5>
+                        </div>
+                        <div class="rounded-lg py-3 border border-grey-2 flex flex-col items-center">
+                            <img src="assets/maisonette.svg" alt="Maisonette">
+                            <h5 class="text-[16px] font-semibold text-center text-theme-black">Maisonette</h5>
+                        </div>
+                        <div class="rounded-lg py-3 border border-grey-2 flex flex-col items-center">
+                            <img src="assets/bungalow.svg" alt="Bunglow">
+                            <h5 class="text-[16px] font-semibold text-center text-theme-black">Bunglow</h5>
+                        </div>
+                        <div class="rounded-lg py-3 border border-grey-2 flex flex-col items-center">
+                            <img src="assets/park-home.svg" alt="Park Home">
+                            <h5 class="text-[16px] font-semibold text-center text-theme-black">Park Home</h5>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h5 class="text-[16px] font-semibold py-5 text-theme-black">The House is</h5>
+                        <div class="grid lg:grid-cols-2 grid-cols-1">
+                            <div class="grid lg:grid-cols-4 grid-cols-2  gap-5">
+                                <div class="rounded-lg p-3 gap-2 border border-grey-2 flex items-center flex-col">
+                                    <img src="assets/house-detached.svg" alt="Detached">
+
+                                    <h5 class="text-[16px] font-semibold text-center text-theme-black">Detached</h5>
+                                </div>
+                                <div class="rounded-lg p-3 gap-2 border border-grey-2 flex items-center flex-col">
+                                    <img src="assets/house-semi-detached.svg" alt="Semi-detached">
+
+                                    <h5 class="text-[16px] font-semibold text-center text-theme-black">Semi-detached</h5>
+                                </div>
+                                <div class="rounded-lg p-3 gap-2 border border-grey-2 flex items-center flex-col">
+                                    <img src="assets/house-mid-terrace.svg" alt="Mid-terrace">
+
+                                    <h5 class="text-[16px] font-semibold text-center text-theme-black">Detached</h5>
+                                </div>
+                                <div class="rounded-lg p-3 gap-2 border border-grey-2 flex items-center flex-col">
+                                    <img src="assets/house-end-terrace.svg" alt="">
+
+                                    <h5 class="text-[16px] font-semibold text-center text-theme-black">End of terrace</h5>
+                                </div>
+                            </div>
+                            <div class="lg:block hidden"></div>
+                        </div>
+                        <!--! Confirm Button Section Start  -->
+                        <div class="w-full mt-5 border-t border-grey-2 flex py-4 md:px-6 px-2">
+                            <div class="flex items-center w-full justify-between ">
+
+                                <button
+                                    class="md:py-[10px] md:px-6 px-4 py-2  border rounded-3xl border-Midnight_Blue md:text-sm sm:text-[12px]  text-[10px] text-center font-semibold"><a
+                                        href="#">Cancel</a></button>
+
+                                <button
+                                    class=" md:py-[10px] py-2 md:px-6 px-4 disabled:text-grey-2 disabled:bg-white disabled:border-grey-2  text-white bg-Midnight_Blue border rounded-full border-Midnight_Blue md:text-sm sm:text-[12px] text-[10px] text-center font-semibold">
+                                    <a href="#">Confirm</a></button>
+                            </div>
+                        </div>
+                        <!--! Confirm Button Section End  -->
+                    </div>
+                </div>
+                <!-- ! Type of Property Detail Section End -->
+                 <!-- ! Age of Property Detail Section Start -->
+                 <div id="AgePropertyDetailSection" class="md:block hidden bg-white px-5 py-5 rounded-b-2xl -700">
+                    <div class="max-w-[750px] mx-auto">
+                    <p class="font-semibold text-[16px] text-center mb-4">According to the latest EPC certificate your property is...</p>
+                    <button
+                        class="border flex  items-center justify-between border-grey-2 rounded-[30px] w-full text-sm font-normal text-theme-black py-3 px-4"
+                        type="button">1930s
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                </div>
+                 </div>
+                 <!-- ! Age of Property Detail Section End -->
+                 <!-- ! Floor Area Detail Section Start -->
+                 <div id="FloorAreaDetailSection" class="md:block hidden bg-white px-5 py-5 rounded-b-2xl -700">
+                    <div class="max-w-[750px] mx-auto">
+                    <p class="font-semibold text-[16px] text-center mb-4">Enter the total floor area of your property</p>
+                    <div class="border border-grey-2  rounded-full grid grid-cols-[35%_65%] ">
+                        <div class="bg-grey-2 py-2  md:px-2 px-3 rounded-s-full">
+                            <button class="text-white py-1 md:px-4 px-2 bg-coral text-[10px] md:text-[12px] font-bold rounded-full">SQFT</button>
+                            <button class="text-black py-1 md:px-4 bg-transparent text-[10px] md:text-[12px] font-bold rounded-full">SQM</button>
+                        </div>
+                        <div class="flex items-center justify-between py-2 px-2">
+                            <div>1206</div>
+                            <div class="flex items-center gap-2">
+                                <button class="w-6 h-6 rounded-xl bg-grey-5">
+                                    <svg class="mx-auto font-bold" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.5 0.0666666L0.5 4.06667L1.43333 5L4.5 1.93333L7.56667 5L8.5 4.06667L4.5 0.0666666Z" fill="#1C1B1F"/>
+                                        </svg>
+                                        
+                                </button>
+                                <button class="w-6 h-6 rounded-xl bg-grey-5">
+                                    <svg class="mx-auto font-bold" width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.5 4.93333L0.5 0.933333L1.43333 0L4.5 3.06667L7.56667 0L8.5 0.933333L4.5 4.93333Z" fill="#1C1B1F"/>
+                                        </svg>  
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+                 <!-- ! Floor Area Detail Section End -->
+
+
+
             </div>
         </section>
         <!-- ! EPC Rating Section End -->
-         
+
+
         <!-- ! Footer Button Area Section Start -->
         <footer class="w-full bg-back-grey border-t border-grey-2 flex py-4 md:px-6 px-2">
             <div class="flex items-center w-full justify-between ">
@@ -261,6 +392,8 @@
         </footer>
         <!-- ! Footer Button Area Section End -->
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
