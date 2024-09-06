@@ -33,20 +33,20 @@
                     </div>
                     <div class="bg-coral py-1 px-2 rounded-xl sm:hidden inline text-white text-[12px]">3/5</div>
                 </div>
-                <div class="py-3 px-6  flex sm:justify-normal justify-between sm:items-start items-center border border-grey-2 relative before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:bottom-0 before:p-0.5">
+                <div class="py-3 px-6 md:block hidden border border-grey-2 relative before:w-full ">
                     <div>
-                        <div class="text-[12px] font-bold text-coral sm:block hidden">Current</div>
+                        <div class="text-[12px] font-bold text-grey-3 sm:block hidden">Done</div>
                         <h4 class="font-semibold text-[18px] text-theme-black">3. Set Goal</h4>
                         <span class="text-[14px] font-normal text-grey-1">Rating of your property</span>
                     </div>
-                    <div class="bg-coral py-1 px-2 rounded-xl sm:hidden inline text-white text-[12px]">3/5</div>
                 </div>
-                <div class="py-3 px-6 md:block hidden border border-grey-2">
+                <div class="relative py-3 px-6 flex sm:justify-normal justify-between sm:items-start items-center border border-grey-2 before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:bottom-0 before:p-0.5">
                     <div>
-                        <div class="text-[12px] font-bold text-grey-3 sm:block hidden">Not done yet</div>
+                        <div class="text-[12px] font-bold text-coral sm:block hidden">Current</div>
                         <h4 class="font-semibold text-[18px] text-theme-black">4. Review Package</h4>
                         <span class="text-[14px] font-normal text-grey-1">Outcome</span>
                     </div>
+                    <div class="bg-coral py-1 px-2 rounded-xl sm:hidden inline text-white text-[12px]">4/5</div>
                 </div>
                 <div class="py-3 px-6 md:block hidden border border-grey-2">
                     <div>
@@ -74,45 +74,64 @@
             <!-- ! Retrofit Plan Goal Section Start -->
             <section class="bg-back-grey w-full">
                 <div class="max-w-[1320px] mx-auto pt-[30px] px-5 pb-28">
-                    <div class="bg-grey-6 py-2 px-3 rounded-md flex justify-between">
-                    <p class="font-semibold text-sm text-theme-black text-pretty">Based on the provided information, we estimate the current Energy Efficiency Rating of your property at: E - 51</p>
-                    <svg width="20" height="20" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0_560_10163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
-                        <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
-                        </mask>
-                        <g mask="url(#mask0_560_10163)">
-                        <path d="M5.59996 11.8336L4.66663 10.9003L7.06663 8.50026L4.66663 6.11693L5.59996 5.18359L7.99996 7.58359L10.3833 5.18359L11.3166 6.11693L8.91663 8.50026L11.3166 10.9003L10.3833 11.8336L7.99996 9.43359L5.59996 11.8336Z" fill="#1C1B1F"/>
-                        </g>
-                        </svg>
+                    <div>
+                        <h3 class="font-bold text-[20px] text-theme-black">Potential Outcome</h3>
+                        <p class="font-semibold text-[16px] text-grey-3">This is an estimated retrofit package based on the information provided and considering the best practice standard "Fabric First" approach, to reach <span class="font-bold">EPC band B</span> </p>
                     </div>
-                    <h3 class="font-bold text-[20px] text-theme-black my-5">Your retrofit plan goal</h3>
-                    <div class="grid lg:grid-cols-[45%_45%] grid-cols-1 justify-between relative">
-                        <div class="rounded-2xl space-y-6 border-4 border-turquoise sm:px-10 sm:py-10 px-5 py-5  bg-white">
-                            <div class="flex items-center justify-between">
-                                <h5 class="font-bold text-[18px] text-theme-black">I want to reach the specific EPC band</h5>
-                                <div class="border-2 border-grey-2 py-1 px-3 rounded-lg font-bold text-[18px] text-theme-black">C</div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="rounded-2xl border border-red-600 py-5 px-10">
+                                <div class="grid grid-cols-7 gap-0.5">
+                                    <div class="text-center">
+                                        <p class="text-[13px] mb-2 font-bold uppercase">G</p>
+                                        <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#D72121]">
+                                            1-20
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-[13px] mb-2 font-bold uppercase">F</p>
+                                        <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#E6633B]">
+                                            21-38
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-[13px] mb-2 font-bold uppercase">E</p>
+                                        <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#F3A153]">
+                                            39-54
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-[13px] mb-2 font-bold uppercase">D</p>
+                                        <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#FED467]">
+                                            55-68
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-[13px] mb-2 font-bold uppercase">C</p>
+                                        <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#D4CF5B]">
+                                            69-80
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-[13px] mb-2 font-bold uppercase">A</p>
+                                        <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#A6C94E]">
+                                            81-91
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-[13px] mb-2 font-bold uppercase">G</p>
+                                        <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#68C23D]">
+                                            92+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="grid grid-cols-7 sm:gap-2 gap-1">
-                                <div class="py-1 sm:px-3 px-2 rounded-lg bg-grey-5 text-[20px] font-bold text-center text-grey-4">G</div>
-                                <div class="py-1 sm:px-3 px-2 rounded-lg bg-grey-5 text-[20px] font-bold text-center text-grey-4">F</div>
-                                <div class="py-1 sm:px-3 px-2 rounded-lg bg-grey-5 text-[20px] font-bold text-center text-grey-4">G</div>
-                                <div class="py-1 sm:px-3 px-2 rounded-lg  text-[20px] font-bold text-center border-2 border-[#FED467]">D</div>
-                                <div class="py-1 sm:px-3 px-2 rounded-lg bg-[rgba(212,207,91,0.77)] text-[20px] font-bold text-center border-2 border-[#D4CF5B]">C</div>
-                                <div class="py-1 sm:px-3 px-2 rounded-lg  text-[20px] font-bold text-center border-2 border-[#A6C94E]">B</div>
-                                <div class="py-1 sm:px-3 px-2 rounded-lg  text-[20px] font-bold text-center border-2 border-[#68C23D]">A</div>
-
-                            </div>
+                            <div></div>
                         </div>
-                        <div class="lg:absolute relative mx-auto top-[50%] lg:left-[50%]  lg:py-0 py-5  left-0 lg:translate-x-[-50%] translate-y-[-50%] translate-x-[0%] font-bold text-[18px]">OR</div>
-                        <div class="rounded-2xl border-4 border-[rgba(0, 0, 0, 0.13)] sm:px-10 sm:py-10 px-5 py-5 space-y-7 opacity-[50%]">
-                            <div class="flex justify-between">
-                                <h5 class="font-bold text-[18px] text-theme-black">I have a limited budget of</h5>
-                                <span class="text-coral font-boldtext-[18px]">$10,000</span>
-                            </div>
-                            <div class="relative rounded-[36px]  bg-[#D9D9D9]">
-                                <div class="bg-Midnight_Blue rounded-s-[36px] p-4 w-[50%]"></div>
-                                <div class="rounded-lg w-[5px] h-[51px] bg-coral absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"></div>
-                            </div>
+                        <div class="grid grid-cols-1">
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
                     </div>
                 </div>

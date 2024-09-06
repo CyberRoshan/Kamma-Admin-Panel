@@ -1188,6 +1188,11 @@ video {
   padding-bottom: 3px;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1334,6 +1339,11 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(255 200 68 / var(--tw-text-opacity));
+}
+
+.text-grey-2{
+  --tw-text-opacity: 1;
+  color: rgb(217 222 217 / var(--tw-text-opacity));
 }
 
 .opacity-\[50\%\]{
