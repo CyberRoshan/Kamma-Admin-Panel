@@ -1,4 +1,4 @@
-// ! index.html
+// ! index.html Start
 $("#dropdownButton").click(() => {
     $("#dropdown").toggleClass("hidden");
 });
@@ -12,9 +12,9 @@ $(".dropDownItems").click(function () {
         $("#dropdown").fadeIn(200);
     });
 });
-// ! index.html
+// ! index.html End
 
-// ! adjust.html
+// ! adjust.html Start
 
 // ! Type of Property Detail Section Start
 
@@ -81,4 +81,35 @@ $("#FloorArea").click(() => {
 });
 // ! Floor Area Detail Section End
 
-// $("#adjustTabbingBox #typeOfProperty")
+
+// ! adjust.html End
+
+
+// ! adjust03.html Start
+$("#TaskBtn").click(()=>{
+    $("#TaskBtn").html("Completed")
+    $("#TaskBtn").addClass("bg-grey-2 text-grey-1 border-grey-2")
+})
+
+$("#completedCatBtn").toggleClass("before:w-full before:bg-turquoise before:absolute before:left-0 before:bottom-[-50%] before:p-[1.5px]")
+$("#allCatBtn").toggleClass("before:w-full before:bg-turquoise before:absolute before:left-0 before:bottom-[-50%] before:p-[1.5px]")
+$("#CompletedCatContent").hide()
+
+$("#allCatBtn").click(()=>{
+    $("#mobileAllCatContent").show()
+    $("#CompletedCatContent").hide()
+    $("#allCatBtn").toggleClass("before:w-full before:bg-turquoise before:absolute before:left-0 before:bottom-[-50%] before:p-[1.5px]")
+$("#completedCatBtn").removeClass("before:w-full before:bg-turquoise before:absolute before:left-0 before:bottom-[-50%] before:p-[1.5px]")
+
+
+
+})
+
+
+$("#completedCatBtn").click(()=>{
+    $("#CompletedCatContent").show()
+    $("#mobileAllCatContent").hide()
+$("#completedCatBtn").toggleClass("before:w-full before:bg-turquoise before:absolute before:left-0 before:bottom-[-50%] before:p-[1.5px]")
+$("#allCatBtn").removeClass("before:w-full before:bg-turquoise before:absolute before:left-0 before:bottom-[-50%] before:p-[1.5px]")
+})
+// ! adjust03.html End
