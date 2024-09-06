@@ -14,6 +14,7 @@ module.exports = {
         "grey-3": "#6C726C",
         "grey-4": "#C1C1C1",
         "grey-5": "#EDF0ED",
+        "grey-6": "#EBEBEB",
         "back-grey": "#F4F6F8",
         turquoise: "#19D3C5",
         Midnight_Blue: "#34485C",
