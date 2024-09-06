@@ -826,12 +826,6 @@ video {
   gap: 1.25rem;
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1005,6 +999,11 @@ video {
   border-color: rgb(25 211 197 / var(--tw-border-opacity));
 }
 
+.border-red-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .bg-Midnight_Blue{
   --tw-bg-opacity: 1;
   background-color: rgb(52 72 92 / var(--tw-bg-opacity));
@@ -1090,10 +1089,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.p-10{
-  padding: 2.5rem;
 }
 
 .p-3{
@@ -1438,6 +1433,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
   .sm\:block{
     display: block;
   }
@@ -1479,6 +1478,11 @@ video {
     padding-right: 2.5rem;
   }
 
+  .sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .sm\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1492,11 +1496,6 @@ video {
   .sm\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .sm\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 
   .sm\:text-\[12px\]{
@@ -1549,6 +1548,10 @@ video {
 
   .md\:mt-12{
     margin-top: 3rem;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
   }
 
   .md\:block{
@@ -1618,6 +1621,16 @@ video {
   .md\:rounded-t-lg{
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+  }
+
+  .md\:rounded-b-2xl{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .md\:rounded-t-none{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 
   .md\:border-none{
@@ -1706,6 +1719,10 @@ video {
     margin-bottom: 1.25rem;
   }
 
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1757,6 +1774,11 @@ video {
 
   .lg\:rounded-xl{
     border-radius: 0.75rem;
+  }
+
+  .lg\:rounded-b-2xl{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
 
   .lg\:p-5{
