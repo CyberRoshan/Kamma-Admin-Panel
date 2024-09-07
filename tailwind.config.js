@@ -16,9 +16,11 @@ module.exports = {
         "grey-5": "#EDF0ED",
         "grey-6": "#EBEBEB",
         "back-grey": "#F4F6F8",
-        turquoise: "#19D3C5",
-        Midnight_Blue: "#34485C",
-        yellow: "#FFC844",
+        'turquoise': "#19D3C5",
+        'Midnight_Blue': "#34485C",
+        'yellow': "#FFC844",
+        'green': "#68C23D",
+        
       },
       boxShadow: {
         "custom-orange": "0 4px 6px -1px rgba(243, 161, 83, 0.13)",
