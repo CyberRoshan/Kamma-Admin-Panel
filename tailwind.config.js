@@ -15,11 +15,13 @@ module.exports = {
         "grey-4": "#C1C1C1",
         "grey-5": "#EDF0ED",
         "grey-6": "#EBEBEB",
+        "grey-7": "#4C514C",
         "back-grey": "#F4F6F8",
         'turquoise': "#19D3C5",
         'Midnight_Blue': "#34485C",
         'yellow': "#FFC844",
         'green': "#68C23D",
+        'custom-gray': 'rgba(180, 180, 180, 0.2)',
         
       },
       boxShadow: {
