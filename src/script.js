@@ -113,3 +113,29 @@ $("#completedCatBtn").toggleClass("before:w-full before:bg-turquoise before:abso
 $("#allCatBtn").removeClass("before:w-full before:bg-turquoise before:absolute before:left-0 before:bottom-[-50%] before:p-[1.5px]")
 })
 // ! adjust03.html End
+
+// ! reviewPackage.html Start
+
+$(document).ready(function() {
+    // Select all tab buttons and tab content sections
+    let tabButtons = $(".reviewTabBtn");
+    let tabContents = $(".reviewBtnContent");
+  
+    // Initially show the first tab and hide others
+    tabButtons.first().addClass("before:w-full before:bg-turquoise before:absolute before:left-0 lg:before:bottom-[-50%] md:before:bottom-[-44%] before:bottom-[-12%] before:p-[1.5px]");
+    tabContents.first().show();
+  
+    // Add click event for each tab button
+    tabButtons.on("click", function() {
+      // Remove active class from all buttons and hide all content
+      tabButtons.removeClass("before:w-full before:bg-turquoise before:absolute before:left-0 lg:before:bottom-[-50%] md:before:bottom-[-44%] before:bottom-[-12%] before:p-[1.5px]");
+      tabContents.hide();
+  
+      // Add active class to clicked button and show related content
+      $(this).addClass("before:w-full before:bg-turquoise before:absolute before:left-0 lg:before:bottom-[-50%] md:before:bottom-[-44%] before:bottom-[-12%] before:p-[1.5px]");
+      tabContents.eq($(this).index()).show();
+    });
+  });
+  
+
+// ! reviewPackage.html End
