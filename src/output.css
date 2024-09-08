@@ -806,6 +806,10 @@ video {
   cursor: pointer;
 }
 
+.cursor-auto{
+  cursor: auto;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -828,6 +832,10 @@ video {
 
 .grid-cols-\[70\%_28\%\]{
   grid-template-columns: 70% 28%;
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row-reverse{
@@ -1160,6 +1168,11 @@ video {
 .border-turquoise{
   --tw-border-opacity: 1;
   border-color: rgb(25 211 197 / var(--tw-border-opacity));
+}
+
+.border-red-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-Midnight_Blue{
