@@ -84,6 +84,50 @@ $("#FloorArea").click(() => {
 
 // ! adjust.html End
 
+// ! adjust02.html Start
+
+// ? Desktop Tabbing Start
+$(document).ready(function() {
+    // Select all tab buttons and tab content sections
+    let tabButtons = $(".adjust02_TabBtn");
+    let tabContents = $(".adjust02_tabContent");
+  
+     
+    // Initially show the first tab and hide others
+    tabButtons.first().addClass("before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:top-[103%] before:p-0.5");
+    tabContents.first().show();
+    tabContents.hide()
+    $("#ConfirmBtn").hide()
+  
+    // Add click event for each tab button
+    tabButtons.on("click", function() {
+      // Remove active class from all buttons and hide all content
+      tabButtons.removeClass("before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:top-[103%] before:p-0.5");
+      tabContents.hide();
+      $("#ConfirmBtn").show()
+      $("#updateCharBtn").hide()
+  
+      // Add active class to clicked button and show related content
+      $(this).addClass("before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:top-[103%] before:p-0.5");
+      tabContents.eq($(this).index()).show();
+    });
+  });
+
+//  ? Desktop Tabbing End
+
+// ? Mobile Tabbing Start
+$(".mobiletabBtn").next().hide()
+$("#first").next().show()
+$(".faqItems .mobiletabBtn").click(function(){
+    $(this).parent().find(".mobiletabContent").slideToggle()
+    $(this).find(".editBtn").toggleClass("hidden");
+    $(this).find(".tickBtn").toggleClass("hidden");     
+    $(this).parent().siblings().find(".mobiletabContent").slideUp()
+})
+// ? Mobile Tabbing End
+  
+// ! adjust02.html End
+
 
 // ! adjust03.html Start
 $("#TaskBtn").click(()=>{

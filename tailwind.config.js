@@ -18,9 +18,11 @@ module.exports = {
         "grey-7": "#4C514C",
         "back-grey": "#F4F6F8",
         'turquoise': "#19D3C5",
+        'turquoise-rgba': 'rgba(25, 211, 197, 0.13)',
         'Midnight_Blue': "#34485C",
         'yellow': "#FFC844",
         'green': "#68C23D",
+        'custom-red': "#D72121",
         'custom-gray': 'rgba(180, 180, 180, 0.2)',
         
       },
