@@ -16,6 +16,7 @@ $(".dropDownItems").click(function () {
 
 // ! adjust.html Start
 
+// ? Desktop Tabbing Start
 $(document).ready(function() {
     // Select all tab buttons and tab content sections
     let tabButtons = $(".adjustTabBtn");
@@ -45,6 +46,18 @@ $(document).ready(function() {
       
     });
 });
+// ? Desktop Tabbing End
+
+// ? Mobile Tabbing Start
+$(".adjustmobiletabBtn").next().hide()
+// $("#first").next().show()
+$(".adjustFaqItems .adjustmobiletabBtn").click(function(){
+    $(this).parent().find(".adjustMobileBtnContent").slideToggle()
+    $(this).find(".editBtn").toggleClass("hidden");
+    $(this).find(".tickBtn").toggleClass("hidden");     
+    $(this).parent().siblings().find(".adjustMobileBtnContent").slideUp()
+})
+// ? Mobile Tabbing End
 
 // ! adjust.html End
 
@@ -81,7 +94,7 @@ $(document).ready(function() {
 
 // ? Mobile Tabbing Start
 $(".mobiletabBtn").next().hide()
-$("#first").next().show()
+// $("#first").next().show()
 $(".faqItems .mobiletabBtn").click(function(){
     $(this).parent().find(".mobiletabContent").slideToggle()
     $(this).find(".editBtn").toggleClass("hidden");

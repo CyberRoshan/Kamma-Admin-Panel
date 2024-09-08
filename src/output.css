@@ -727,6 +727,10 @@ video {
   height: 100vh;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .w-2\.5{
   width: 0.625rem;
 }
@@ -769,6 +773,14 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-8{
+  width: 2rem;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .max-w-\[1320px\]{
@@ -1054,6 +1066,10 @@ video {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .rounded-b-2xl{
@@ -1546,6 +1562,30 @@ video {
 
 .italic{
   font-style: italic;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
+}
+
+.tracking-tighter{
+  letter-spacing: -0.05em;
+}
+
+.tracking-\[20\%\]{
+  letter-spacing: 20%;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.-tracking-widest{
+  letter-spacing: -0.1em;
 }
 
 .text-Midnight_Blue{
