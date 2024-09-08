@@ -37,21 +37,21 @@
                     </div>
                     <div class="bg-coral py-1 px-2 rounded-xl sm:hidden inline text-white text-[12px]">2/5</div>
                 </div>
-                <div class="py-3 px-6 md:block hidden border border-grey-2">
+                <div class="py-3 px-6 md:block hidden border border-grey-2 opacity-50">
                     <div>
                         <div class="text-[12px] font-bold text-grey-3 sm:block hidden">Not done yet</div>
                         <h4 class="font-semibold text-[18px] text-theme-black">3. Set Goal</h4>
                         <span class="text-[14px] font-normal text-grey-1">Rating of your property</span>
                     </div>
                 </div>
-                <div class="py-3 px-6 md:block hidden border border-grey-2">
+                <div class="py-3 px-6 md:block hidden border border-grey-2 opacity-50">
                     <div>
                         <div class="text-[12px] font-bold text-grey-3 sm:block hidden">Not done yet</div>
                         <h4 class="font-semibold text-[18px] text-theme-black">4. Review Package</h4>
                         <span class="text-[14px] font-normal text-grey-1">Outcome</span>
                     </div>
                 </div>
-                <div class="py-3 px-6 lg:block hidden border border-grey-2">
+                <div class="py-3 px-6 lg:block hidden border border-grey-2 opacity-50">
                     <div>
                         <div class="text-[12px] font-bold text-grey-3 sm:block hidden">Not done yet</div>
                         <h4 class="font-semibold text-[18px] text-theme-black">5. Take Action</h4>
@@ -88,7 +88,17 @@
                                 <div class="font-normal text-[13px] text-grey-1">Status: <span class="font-bold italic text-Midnight_Blue">Invalid</span></div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-7 gap-0.5">
+                        <div>
+                        <div class="grid grid-cols-7 gap-0.5 relative">
+                            <!-- ! Tooltip Design Start -->
+                            <!-- <div class="absolute top-[80%] left-[25%] flex items-center">
+                             <figure class="relative ">
+                            <img class="w-full" src="assets/tooltip.svg" alt="">
+                            <span class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font-bold text-center text-[13px]">41 - E</span>
+                             </figure>
+                            <p class="font-normal text-[11px] text-grey-1">From EPC</p>
+                            </div> -->
+                            <!-- ! Tooltip Design End -->
                             <div class="text-center">
                                 <p class="text-[13px] mb-2 font-bold uppercase">G</p>
                                 <div class="py-[3px] sm:text-[13px] text-[10px] sm:font-bold font-semibold text-theme-black bg-[#D72121]">
@@ -131,6 +141,18 @@
                                     92+
                                 </div>
                             </div>
+                        </div>
+                        <div class="py-3 relative">
+                            <!-- ! Tooltip Design Start -->
+                             <div class="absolute top-[0%] left-[25%] flex items-center">
+                                <figure class="relative ">
+                               <img class="w-full" src="assets/tooltip.svg" alt="">
+                               <span class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font-bold text-center text-[13px]">41 - E</span>
+                                </figure>
+                               <p class="font-normal text-[11px] text-grey-1">From EPC</p>
+                               </div>
+                               <!-- ! Tooltip Design End -->
+                        </div>
                         </div>
                     </div>
                     <div class="py-5">
@@ -374,8 +396,8 @@
                             </div>
                         </div>
                         <div>
-                            <h5 class="text-[16px] font-semibold py-5 text-theme-black">The House is</h5>
-                            <div class="grid grid-cols-1 gap-2">
+                            <h5 class="hidden text-[16px] font-semibold py-5 text-theme-black">The House is</h5>
+                            <div class="hidden grid-cols-1 gap-2">
                                 <div class="rounded-lg border border-grey-2 py-3 px-4 flex items-center gap-2">
                                     <img class="w-8 h-8" src="assets/house-detached.svg" alt="Detached">
                                     <h4 class="font-semibold text-[16px]  text-theme-black">Detached</h4>
