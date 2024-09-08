@@ -14,6 +14,37 @@ $(".dropDownItems").click(function () {
 });
 // ! index.html End
 
+// ! Common Dropdown Start
+$(document).ready(function () {
+  // Toggle dropdown visibility on button click
+  $(".dropdown-button").click(function () {
+    var $dropdown = $(this).next(".dropdown");
+    $(".dropdown").not($dropdown).addClass("hidden"); // Hide other open dropdowns
+    $dropdown.toggleClass("hidden");  // Toggle visibility of current dropdown
+  });
+
+  // Handle dropdown item selection
+  $(".dropDownItems").click(function () {
+    let selectedText = $(this).html();
+    console.log(selectedText);
+    
+    // Update the text of the corresponding dropdown button
+    $(this).closest(".dropdown-container").find(".button-text").html(selectedText);
+
+    // Hide the dropdown after selecting an item
+    $(this).closest(".dropdown").addClass("hidden");
+  });
+
+  // Close dropdown if clicked outside
+  $(document).click(function (e) {
+    if (!$(e.target).closest('.dropdown-container').length) {
+      $(".dropdown").addClass("hidden");  // Hide all dropdowns when clicking outside
+    }
+  });
+});
+
+// ! Common Dropdown End
+
 // ! adjust.html Start
 
 // ? Desktop Tabbing Start
