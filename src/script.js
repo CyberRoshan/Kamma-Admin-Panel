@@ -29,6 +29,7 @@ $(document).ready(function () {
 
 // ! Common Dropdown End
 
+
 // ! adjust.html Start
 
 // ? Desktop Tabbing Start
@@ -179,3 +180,53 @@ $(document).ready(function () {
 });
 
 // ! reviewPackage.html End
+
+// ! Radio Button Start
+$(document).ready(function () {
+  $(".radio-btn").click(function () {
+      $(".radio-btn").removeClass("bg-coral text-white").addClass("bg-transparent text-black");
+      $(this).addClass("bg-coral text-white").removeClass("bg-transparent text-black");
+  });
+});
+
+// ! Radio Button End
+
+// ! Number Input box Start
+$(document).ready(function() {
+  $(".decrease").click(function() {
+      var input = $(".quantity");
+      var currentValue = parseInt(input.val());
+      if (!isNaN(currentValue) && currentValue > parseInt(input.attr("min"))) {
+          input.val(currentValue - 1);
+      }
+  });
+
+  $(".increase").click(function() {
+      var input = $(".quantity");
+      var currentValue = parseInt(input.val());
+      if (!isNaN(currentValue) && currentValue < parseInt(input.attr("max"))) {
+          input.val(currentValue + 1);
+      }
+  });
+
+  $(".quantity").focus(function() {
+      $(this).select();
+  });
+});
+
+// ! Number Input box End
+
+// ! Radio Btn Card Start
+$(document).ready(function() {
+  $(".card").click(function() {
+      // Remove border and tick from all cards
+      $(".card").removeClass("border-coral").addClass("border-grey-2");
+      $(".tick-icon").addClass("hidden");
+      
+      // Add border-coral and show tick for the clicked card
+      $(this).removeClass("border-grey-2").addClass("border-coral");
+      $(this).find(".tick-icon").removeClass("hidden");
+  });
+});
+
+// ! Radio Btn Card End
