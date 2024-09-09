@@ -1,19 +1,3 @@
-// ! index.html Start
-$("#dropdownButton").click(() => {
-  $("#dropdown").toggleClass("hidden");
-});
-
-$(".dropDownItems").click(function () {
-  let data = $(this).html();
-  console.log(data);
-  $("#dropdownButton").html(data);
-  $("#dropdown").fadeOut(200);
-  $("#dropdownButton").click(() => {
-    $("#dropdown").fadeIn(200);
-  });
-});
-// ! index.html End
-
 // ! Common Dropdown Start
 $(document).ready(function () {
   // Toggle dropdown visibility on button click
