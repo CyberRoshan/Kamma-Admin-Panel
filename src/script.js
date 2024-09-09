@@ -234,3 +234,18 @@ $(document).ready(function () {
 });
 
 // ! Radio Btn Card End
+
+// ! Insulated Yes | No | Unknown Button Start
+$(document).ready(function(){
+  // Add click event to buttons
+  $('.option-btn').click(function(){
+      // Remove active state from all buttons
+      $('.option-btn').removeClass('bg-turquoise-rgba border-turquoise')
+                      .addClass('border-grey-2 text-black bg-transparent');
+      
+      // Add active state to the clicked button
+      $(this).removeClass('border-grey-2 text-black bg-transparent')
+             .addClass('bg-turquoise-rgba border-turquoise');
+  });
+});
+// ! Insulated Yes | No | Unknown Button End

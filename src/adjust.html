@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./output.css" rel="stylesheet" />
-        <title>Adjust Page</title>
+        <title>Kamma Admin Panel</title>
     </head>
 
     <body class="font-Nunito">
@@ -202,8 +202,8 @@
                      <div id="TypePropertyDetailSection" class="adjustTabDetail md:block hidden bg-white md:mt-0 mt-5 px-5 pt-5 md:rounded-b-2xl md:rounded-t-none rounded-2xl">
                         <h4 class="text-[18px] font-bold uppercase text-theme-black my-5">Property is a</h4>
                         <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-                            <div class="relative card rounded-lg py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="house">
-                                <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="relative card rounded-lg cursor-pointer py-3 border border-coral overflow-hidden flex flex-col items-center" data-type="house">
+                                <svg class="absolute right-0 top-0 tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -211,7 +211,7 @@
                                 <h5 class="text-[16px] font-semibold text-center text-theme-black">House</h5>
                             </div>
                         
-                            <div class="relative card rounded-lg py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
+                            <div class="relative card rounded-lg cursor-pointer py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -220,7 +220,7 @@
                                 <h5 class="text-[16px] font-semibold text-center text-theme-black">Flat</h5>
                             </div>
                         
-                            <div class="relative card rounded-lg py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
+                            <div class="relative card rounded-lg cursor-pointer py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -229,7 +229,7 @@
                                 <h5 class="text-[16px] font-semibold text-center text-theme-black">Maisonette</h5>
                             </div>
                         
-                            <div class="relative card rounded-lg py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
+                            <div class="relative card rounded-lg cursor-pointer py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -238,7 +238,7 @@
                                 <h5 class="text-[16px] font-semibold text-center text-theme-black">Bunglow</h5>
                             </div>
                         
-                            <div class="relative card rounded-lg py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
+                            <div class="relative card rounded-lg cursor-pointer py-3 border border-grey-2 overflow-hidden flex flex-col items-center" data-type="flat">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -252,15 +252,15 @@
                             <h5 class="text-[16px] font-semibold py-5 text-theme-black">The House is</h5>
                             <div class="grid lg:grid-cols-2 grid-cols-1">
                                 <div class="grid lg:grid-cols-4 grid-cols-2 gap-5">
-                                    <div class="relative card rounded-lg p-3 gap-2 overflow-hidden border border-grey-2 flex items-center flex-col">
-                                        <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="relative card rounded-lg p-3 cursor-pointer gap-2 overflow-hidden border border-coral flex items-center flex-col">
+                                        <svg class="absolute right-0 top-0 tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                             <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                         <img src="assets/house-detached.svg" alt="Detached" />
                                         <h5 class="text-[16px] font-semibold text-center text-theme-black">Detached</h5>
                                     </div>
-                                    <div class="relative card rounded-lg p-3 gap-2 overflow-hidden border border-grey-2 flex items-center flex-col">
+                                    <div class="relative card rounded-lg p-3 cursor-pointer gap-2 overflow-hidden border border-grey-2 flex items-center flex-col">
                                         <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                             <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -268,7 +268,7 @@
                                         <img src="assets/house-semi-detached.svg" alt="Semi-detached" />
                                         <h5 class="text-[16px] font-semibold text-center text-theme-black">Semi-detached</h5>
                                     </div>
-                                    <div class="relative card rounded-lg p-3 gap-2 overflow-hidden border border-grey-2 flex items-center flex-col">
+                                    <div class="relative card rounded-lg p-3 cursor-pointer gap-2 overflow-hidden border border-grey-2 flex items-center flex-col">
                                         <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                             <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -276,7 +276,7 @@
                                         <img src="assets/house-mid-terrace.svg" alt="Mid-terrace" />
                                         <h5 class="text-[16px] font-semibold text-center text-theme-black">Mid-terrace</h5>
                                     </div>
-                                    <div class="relative card rounded-lg p-3 gap-2 overflow-hidden border border-grey-2 flex items-center flex-col">
+                                    <div class="relative card rounded-lg p-3 cursor-pointer gap-2 overflow-hidden border border-grey-2 flex items-center flex-col">
                                         <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                             <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -416,8 +416,8 @@
                             
                         <h4 class="text-[15px] font-bold uppercase text-theme-black my-5 tracking-wider">Property is a</h4>
                         <div class="grid grid-cols-1 gap-2">
-                            <div class="relative card rounded-lg overflow-hidden border border-grey-2 py-3 px-4 flex items-center gap-2">
-                                <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="relative card rounded-lg overflow-hidden cursor-pointer border border-coral py-3 px-4 flex items-center gap-2">
+                                <svg class="absolute right-0 top-0 tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -425,7 +425,7 @@
                                 <h4 class="font-semibold text-[16px] text-theme-black">House</h4>
                             </div>
                         
-                            <div class="relative card rounded-lg overflow-hidden border border-grey-2 py-3 px-4 flex items-center gap-2">
+                            <div class="relative card rounded-lg overflow-hidden cursor-pointer border border-grey-2 py-3 px-4 flex items-center gap-2">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -434,7 +434,7 @@
                                 <h4 class="font-semibold text-[16px] text-theme-black">Flat</h4>
                             </div>
                         
-                            <div class="relative card rounded-lg overflow-hidden border border-grey-2 py-3 px-4 flex items-center gap-2">
+                            <div class="relative card rounded-lg overflow-hidden cursor-pointer border border-grey-2 py-3 px-4 flex items-center gap-2">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -443,7 +443,7 @@
                                 <h4 class="font-semibold text-[16px] text-theme-black">Maisonette</h4>
                             </div>
                         
-                            <div class="relative card rounded-lg overflow-hidden border border-grey-2 py-3 px-4 flex items-center gap-2">
+                            <div class="relative card rounded-lg overflow-hidden cursor-pointer border border-grey-2 py-3 px-4 flex items-center gap-2">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -452,7 +452,7 @@
                                 <h4 class="font-semibold text-[16px] text-theme-black">Bungalow</h4>
                             </div>
                         
-                            <div class="relative card rounded-lg overflow-hidden border border-grey-2 py-3 px-4 flex items-center gap-2">
+                            <div class="relative card rounded-lg overflow-hidden cursor-pointer border border-grey-2 py-3 px-4 flex items-center gap-2">
                                 <svg class="absolute right-0 top-0 hidden tick-icon" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 -1H36V35L18.5806 17.5806L0 -1Z" fill="#FF4D72" />
                                     <path d="M20 10.4474L23.0526 13.4473L28.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
