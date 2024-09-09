@@ -4,16 +4,19 @@ $(document).ready(function () {
   $(".dropdown-button").click(function () {
     var $dropdown = $(this).next(".dropdown");
     $(".dropdown").not($dropdown).addClass("hidden"); // Hide other open dropdowns
-    $dropdown.toggleClass("hidden");  // Toggle visibility of current dropdown
+    $dropdown.toggleClass("hidden"); // Toggle visibility of current dropdown
   });
 
   // Handle dropdown item selection
   $(".dropDownItems").click(function () {
     let selectedText = $(this).html();
     console.log(selectedText);
-    
+
     // Update the text of the corresponding dropdown button
-    $(this).closest(".dropdown-container").find(".button-text").html(selectedText);
+    $(this)
+      .closest(".dropdown-container")
+      .find(".button-text")
+      .html(selectedText);
 
     // Hide the dropdown after selecting an item
     $(this).closest(".dropdown").addClass("hidden");
@@ -21,14 +24,13 @@ $(document).ready(function () {
 
   // Close dropdown if clicked outside
   $(document).click(function (e) {
-    if (!$(e.target).closest('.dropdown-container').length) {
-      $(".dropdown").addClass("hidden");  // Hide all dropdowns when clicking outside
+    if (!$(e.target).closest(".dropdown-container").length) {
+      $(".dropdown").addClass("hidden"); // Hide all dropdowns when clicking outside
     }
   });
 });
 
 // ! Common Dropdown End
-
 
 // ! adjust.html Start
 
@@ -184,48 +186,50 @@ $(document).ready(function () {
 // ! Radio Button Start
 $(document).ready(function () {
   $(".radio-btn").click(function () {
-      $(".radio-btn").removeClass("bg-coral text-white").addClass("bg-transparent text-black");
-      $(this).addClass("bg-coral text-white").removeClass("bg-transparent text-black");
+    $(".radio-btn")
+      .removeClass("bg-coral text-white")
+      .addClass("bg-transparent text-black");
+    $(this)
+      .addClass("bg-coral text-white")
+      .removeClass("bg-transparent text-black");
   });
 });
 
 // ! Radio Button End
 
 // ! Number Input box Start
-$(document).ready(function() {
-  $(".decrease").click(function() {
-      var input = $(".quantity");
-      var currentValue = parseInt(input.val());
-      if (!isNaN(currentValue) && currentValue > parseInt(input.attr("min"))) {
-          input.val(currentValue - 1);
-      }
+$(document).ready(function () {
+  $(".decrease").click(function () {
+    var input = $(".quantity");
+    var currentValue = parseInt(input.val());
+    if (!isNaN(currentValue) && currentValue > parseInt(input.attr("min"))) {
+      input.val(currentValue - 1);
+    }
   });
 
-  $(".increase").click(function() {
-      var input = $(".quantity");
-      var currentValue = parseInt(input.val());
-      if (!isNaN(currentValue) && currentValue < parseInt(input.attr("max"))) {
-          input.val(currentValue + 1);
-      }
+  $(".increase").click(function () {
+    var input = $(".quantity");
+    var currentValue = parseInt(input.val());
+    if (!isNaN(currentValue) && currentValue < parseInt(input.attr("max"))) {
+      input.val(currentValue + 1);
+    }
   });
 
-  $(".quantity").focus(function() {
-      $(this).select();
+  $(".quantity").focus(function () {
+    $(this).select();
   });
 });
 
 // ! Number Input box End
 
 // ! Radio Btn Card Start
-$(document).ready(function() {
-  $(".card").click(function() {
-      // Remove border and tick from all cards
-      $(".card").removeClass("border-coral").addClass("border-grey-2");
-      $(".tick-icon").addClass("hidden");
-      
-      // Add border-coral and show tick for the clicked card
-      $(this).removeClass("border-grey-2").addClass("border-coral");
-      $(this).find(".tick-icon").removeClass("hidden");
+$(document).ready(function () {
+  $(".card").click(function () {
+    $(".card").removeClass("border-coral").addClass("border-grey-2");
+    $(".tick-icon").addClass("hidden");
+
+    $(this).removeClass("border-grey-2").addClass("border-coral");
+    $(this).find(".tick-icon").removeClass("hidden");
   });
 });
 
