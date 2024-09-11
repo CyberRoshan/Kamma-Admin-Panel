@@ -30,6 +30,9 @@ module.exports = {
         "custom-orange": "0 4px 6px -1px rgba(243, 161, 83, 0.13)",
         "custom-orange-17": "0 4px 6px -1px rgba(243, 161, 83, 0.17)",
       },
+      fontSize: {
+        '16px': '16px',
+      },
     },
   },
   plugins: [],
