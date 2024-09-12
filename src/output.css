@@ -1413,6 +1413,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .py-\[10px\]{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1483,6 +1488,10 @@ video {
   padding-top: 30px;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1493,6 +1502,10 @@ video {
 
 .font-Nunito{
   font-family: "Nunito Sans", "sans-serif";
+}
+
+.text-16px{
+  font-size: 16px;
 }
 
 .text-\[10px\]{
@@ -1519,10 +1532,6 @@ video {
   font-size: 15px;
 }
 
-.text-\[16px\]{
-  font-size: 16px;
-}
-
 .text-\[18px\]{
   font-size: 18px;
 }
@@ -1538,10 +1547,6 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-16px{
-  font-size: 16px;
 }
 
 .font-bold{
@@ -1833,6 +1838,10 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .sm\:text-16px{
+    font-size: 16px;
+  }
+
   .sm\:text-\[12px\]{
     font-size: 12px;
   }
@@ -1843,10 +1852,6 @@ video {
 
   .sm\:text-\[14px\]{
     font-size: 14px;
-  }
-
-  .sm\:text-\[16px\]{
-    font-size: 16px;
   }
 
   .sm\:text-\[18px\]{
@@ -1860,10 +1865,6 @@ video {
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-16px{
-    font-size: 16px;
   }
 
   .sm\:font-bold{
@@ -2040,21 +2041,17 @@ video {
     text-align: start;
   }
 
-  .md\:text-\[12px\]{
-    font-size: 12px;
+  .md\:text-16px{
+    font-size: 16px;
   }
 
-  .md\:text-\[16px\]{
-    font-size: 16px;
+  .md\:text-\[12px\]{
+    font-size: 12px;
   }
 
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-16px{
-    font-size: 16px;
   }
 
   .md\:before\:bottom-\[-44\%\]::before{

@@ -23,8 +23,8 @@
                 </div>
                 <div class=" py-3 px-6 flex items-center justify-between border border-grey-2 relative before:w-full before:bg-turquoise md:before:block before:hidden before:absolute before:left-0 before:bottom-0 before:p-0.5">
                     <div>
-                        <div class="text-[12px] font-bold  text-coral flex justify-between ">
-                            Current
+                        <div class="text-[12px] font-bold  text-coral justify-between flex">
+                            <span class="sm:block hidden">Current</span>
                             <div class="absolute md:top-4 md:right-4 top-[50%] translate-y-[-50%] right-16 flex gap-1">
                                 <div class="w-3 h-3 rounded-full border border-coral bg-coral"></div>
                                 <div class="w-3 h-3 rounded-full border border-theme-black"></div>
@@ -76,7 +76,7 @@
             <!-- ! Plan Code Section End -->
             <!-- ! EPC Rating Section Start -->
             <section class="bg-back-grey w-full">
-                <div class="max-w-[1320px] mx-auto pt-[30px] px-5 pb-24">
+                <div class="max-w-[1320px] mx-auto pt-[30px] md:px-5 px-3 pb-24">
                     <div class="rounded-2xl bg-white grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-5 border border-[rgba(255,200,68,0.2)] shadow-custom-orange p-5">
                         <div class="flex gap-2">
                             <div class="border-2 rounded-lg text-[20px] font-bold text-center border-[#F3A153] shadow-custom-orange-17 py-3 flex items-center justify-center px-4">
@@ -147,8 +147,8 @@
                         </div>
                     </div>
                     <div class="py-5">
-                        <h3 class="font-bold sm:text-[20px] text-16px text-pretty text-theme-black">Let's start with general information about your property</h3>
-                        <p class="sm:text-16px text-[12px] font-semibold text-grey-3">According to the latest Energy Performance Certificate (EPC) your property is:</p>
+                        <h3 class="font-bold text-[20px] text-pretty text-theme-black">Let's start with general information about your property</h3>
+                        <p class="text-16px font-semibold text-grey-3">According to the latest Energy Performance Certificate (EPC) your property is:</p>
                     </div>
 
                     <!-- ! Desktop Tabbing Section Start -->
@@ -158,7 +158,7 @@
                         <!-- ! Tabbing Design Section Start -->
                         <div id="typeOfProperty" class="adjustTabBtn  py-2 px-[20px] pb-6 relative bg-white cursor-pointer flex justify-center md:w-auto w-full items-center gap-2  md:rounded-none rounded-lg"
                         >
-                            <img src="assets/type-of-property.png" alt="Type of Property" />
+                            <img src="assets/type-of-property (2).svg" alt="Type of Property" />
                             <div>
                                 <h5 class="font-bold text-16px text-theme-black">Type of Property</h5>
                                 <p class="paratoggle flex items-center gap-1 font-normal text-sm text-grey-3">A Semi-Detached House 
@@ -399,7 +399,7 @@
                     <div class="lg:hidden grid grid-cols-1 gap-2">
                         <!-- ? Types of Property Accordian Start -->
                         <div class="adjustFaqItems rounded-xl border border-grey-2 bg-white">
-                        <div id="first" class="adjustmobiletabBtn cursor-pointer rounded-xl flex items-center justify-between py-3 px-4">
+                        <div id="first" class="adjustmobiletabBtn cursor-pointer rounded-xl flex items-center justify-between py-2 px-5">
                             <div class="flex gap-3 items-center">
                                 <img class="w-16 h-16" src="assets/type-of-property (1).svg" alt="Property of Type">
                                 <div>
@@ -412,7 +412,7 @@
                                 <img class="tickBtn hidden w-6 h-6" src="assets/Tick 1.svg" alt="Tick">
                             </div>
                         </div>
-                        <div id="" class="adjustMobileBtnContent bg-white px-5 py-5 border-t border-grey-2 rounded-b-2xl">
+                        <div id="" class="adjustMobileBtnContent bg-white px-5 pb-5 border-t border-grey-2 rounded-b-2xl">
                             
                         <h4 class="text-[15px] font-bold uppercase text-theme-black my-5 tracking-wider">Property is a</h4>
                         <div class="grid grid-cols-1 gap-2">
@@ -488,7 +488,7 @@
 
                         <!-- ? Age of Property Accordian Start -->
                         <div class="adjustFaqItems rounded-xl border border-grey-2 bg-white">
-                        <div id="first" class="adjustmobiletabBtn cursor-pointer rounded-xl flex items-center justify-between py-3 px-4">
+                        <div id="" class="adjustmobiletabBtn cursor-pointer rounded-xl flex items-center justify-between py-2 px-5">
                             <div class="flex gap-3 items-center">
                                 <img class="w-16 h-16" src="assets/age-of-the-property.svg" alt="Age of Property">
                                 <div>
@@ -501,9 +501,9 @@
                                 <img class="tickBtn hidden w-6 h-6" src="assets/Tick 1.svg" alt="Tick">
                             </div>
                         </div>
-                        <div id="" class="adjustMobileBtnContent bg-white px-5 py-5 border-t border-grey-2 rounded-b-2xl">
+                        <div id="" class="adjustMobileBtnContent bg-white px-5 pt-5 border-t border-grey-2 rounded-b-2xl">
                             <div class="max-w-[750px] mx-auto">
-                                <p class="font-normal text-[14px] text-center mb-4">According to the latest EPC certificate your property is...</p>
+                                <p class="font-normal text-sm text-center mb-4">According to the latest EPC certificate your property is...</p>
                                 <!-- ! Common Dropdown Start -->
                             <div class="dropdown-container my-5">
                                 <button class="dropdown-button border flex items-center justify-between border-grey-2 rounded-[30px] w-full md:text-sm text-[12px] font-normal text-theme-black py-2.5 px-4" type="button">
@@ -529,9 +529,9 @@
                         <!-- ? Age of Property Accordian End -->
                         <!-- ? Floor Area Accordian Start -->
                         <div class="adjustFaqItems rounded-xl border border-grey-2 bg-white">
-                            <div id="first" class="adjustmobiletabBtn cursor-pointer rounded-xl flex items-center justify-between py-3 px-4">
+                            <div id="first" class="adjustmobiletabBtn cursor-pointer rounded-xl flex items-center justify-between py-2 px-5">
                                 <div class="flex gap-3 items-center">
-                                    <img class="w-16 h-16" src="assets/Main Floor.png" alt="Floor Area">
+                                    <img class="w-16 h-16" src="assets/total-floor-area-mobile.svg" alt="Floor Area">
                                     <div>
                                         <h4 class="font-bold text-16px text-theme-black">Floor Area</h4>
                                         <p class="font-normal text-sm text-grey-3">A Semi-Detached House</p>
@@ -544,7 +544,7 @@
                             </div>
                             <div id="" class="adjustMobileBtnContent bg-white px-5 py-5 border-t border-grey-2 rounded-b-2xl">
                                 <div class="max-w-[750px] mx-auto">
-                                    <p class="font-semibold text-16px text-center mb-4">Enter the total floor area of your property</p>
+                                    <p class="font-normal text-sm text-center mb-4">Enter the total floor area of your property</p>
                                     <div class="border border-grey-2 rounded-full grid md:grid-cols-[20%_80%] grid-cols-[35%_65%]">
                                         <!-- ! Radio Button Start -->
                                         <div class="flex bg-grey-2 py-2 md:px-2 px-3 rounded-s-full">
@@ -583,14 +583,14 @@
 
             <!-- ! Footer Button Area Section Start -->
             <footer class="w-full bg-back-grey border-t border-grey-2 flex py-4 md:px-6 px-2">
-                <div class="flex items-center w-full justify-between">
+                <div class="flex items-center w-full md:justify-between justify-around">
                     <div class="flex justify-between">
-                        <button class="md:py-[10px] md:px-6 px-4 py-2 border rounded-3xl border-Midnight_Blue md:text-sm sm:text-[12px] text-[10px] text-center font-semibold"><a href="index.html">Back</a></button>
-                        <button class="py-[10px] md:px-4 px-2 font-bold md:text-sm sm:text-[12px] text-[10px] text-grey-3 text-center">Come Back Later</button>
+                        <button class="py-[10px] md:px-6 px-4 bg-white border rounded-3xl border-Midnight_Blue md:text-sm text-sm text-center font-semibold"><a href="index.html">Back</a></button>
+                        <button class="py-[10px] px-3 font-bold text-sm text-grey-3 text-center">Come Back Later</button>
                     </div>
 
                     <button
-                        class="md:py-[10px] py-2 md:px-6 px-4 disabled:text-grey-2 disabled:bg-white disabled:border-grey-2 text-white bg-Midnight_Blue border rounded-full border-Midnight_Blue md:text-sm sm:text-[12px] text-[10px] text-center font-semibold"
+                        class="py-[10px] px-4 disabled:text-grey-2 disabled:bg-white disabled:border-grey-2 text-white bg-Midnight_Blue border rounded-full border-Midnight_Blue text-sm text-center font-semibold"
                     >
                         <a href="adjust02.html">Save & Continue</a>
                     </button>

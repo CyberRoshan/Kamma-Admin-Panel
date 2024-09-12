@@ -18,7 +18,7 @@
             >
                 <div>
                     <div class="text-[12px] font-bold text-coral sm:block hidden">Current</div>
-                    <h4 class="font-semibold text-[18px] text-theme-black">1. Search</h4>
+                    <h4 class="font-semibold text-[18px] text-theme-black flex gap-1"><span class="md:block hidden">1.</span> Search</h4>
                     <span class="text-[14px] font-normal text-grey-1">Search for your property</span>
                 </div>
                 <div class="bg-coral py-1 px-2 rounded-xl sm:hidden inline text-white text-[12px]">1/5</div>
@@ -65,10 +65,14 @@
     <main>
         <!-- ! Search Property Section Start -->
         <section class="bg-back-grey h-screen" aria-labelledby="search-property-heading">
-            <div class="w-full md:h-screen h-full py-5 bg-back-grey flex items-start justify-center md:px-0 px-5">
+            <div class="md:hidden block py-7 text-center">
+                <h2 class="text-[18px] font-bold text-theme-black">To get started: Search for your property</h2>
+                <p class="text-sm font-normal text-grey-1">Search for an address or select the “Retrofit Plan Code” tab to resume an existing journey.</p>
+            </div>
+            <div class="w-full md:h-screen h-full bg-back-grey flex items-start justify-center md:px-0 sm:px-5 px-3">
                 <div class="bg-white rounded-[16px] p-5 md:mt-12 mt-6 w-[620px] mx-auto">
-                    <div>
-                        <h3 id="search-property-heading" class="text-[20px] font-bold">To get started: Search for your property</h3>
+                    <div class="md:text-start text-center">
+                        <h3 id="search-property-heading" class="text-[20px] font-bold text-theme-black">To get started: Search for your property</h3>
                         <p class="text-[14px] font-normal text-grey-1">Search for an address or select the “Retrofit Plan Code” tab to resume an existing journey.</p>
                     </div>
                     <div class="border-b-2 border-grey-2">
