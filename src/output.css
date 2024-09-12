@@ -1220,6 +1220,16 @@ video {
   border-color: rgb(25 211 197 / var(--tw-border-opacity));
 }
 
+.border-red-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity));
+}
+
+.border-red-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .bg-Midnight_Blue{
   --tw-bg-opacity: 1;
   background-color: rgb(52 72 92 / var(--tw-bg-opacity));
@@ -1442,6 +1452,16 @@ video {
 .py-\[3px\]{
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-10{
@@ -1852,6 +1872,21 @@ video {
   .sm\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .sm\:text-16px{
