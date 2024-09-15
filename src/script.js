@@ -237,13 +237,10 @@ $(document).ready(function () {
 
 // ! Insulated Yes | No | Unknown Button Start
 $(document).ready(function(){
-  // Add click event to buttons
   $('.option-btn').click(function(){
-      // Remove active state from all buttons
       $('.option-btn').removeClass('bg-turquoise-rgba border-turquoise')
                       .addClass('border-grey-2 text-black bg-transparent');
       
-      // Add active state to the clicked button
       $(this).removeClass('border-grey-2 text-black bg-transparent')
              .addClass('bg-turquoise-rgba border-turquoise');
   });
@@ -252,28 +249,24 @@ $(document).ready(function(){
 
 // ! Trash Button Pop Up Start
 $(document).ready(function() {
-  // Show the popup when the trash icon is clicked
   $('#trashIcon').click(function() {
-    $('#popup').removeClass('hidden').addClass('flex'); // Show popup
+    $('#popup').removeClass('hidden').addClass('flex'); 
   });
 
-  // Close the popup when the close button is clicked
   $('.closePopup').click(function() {
-    $('#popup').removeClass('flex').addClass('hidden'); // Hide popup
+    $('#popup').removeClass('flex').addClass('hidden'); 
   });
 });
 // ! Trash Button Pop Up End
 
 // ! Info Button Pop Up Start
  $(document).ready(function() {
-      // Show the info popup when the info icon is clicked
       $('#infoIcon').click(function() {
-        $('#infoPopup').removeClass('hidden').addClass('flex'); // Show popup
+        $('#infoPopup').removeClass('hidden').addClass('flex');
       });
 
-      // Close the info popup when the close button is clicked
       $('.infoClosePopup').click(function() {
-        $('#infoPopup').removeClass('flex').addClass('hidden'); // Hide popup
+        $('#infoPopup').removeClass('flex').addClass('hidden');
       });
     });
 // ! Info Button Pop Up End
