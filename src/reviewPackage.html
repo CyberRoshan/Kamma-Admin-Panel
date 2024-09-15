@@ -248,8 +248,65 @@
                                         <div class="w-[82px] font-normal text-16px text-center">0.12</div>
                                     </div>
                                     <div class="flex sm:gap-4 gap-2">
-                                        <img src="assets/Group.svg" alt="info">
-                                        <img src="assets/Trash 1.svg" alt="trash">
+                                        <!-- ! Hew we have to work -->
+                                        <img id="infoIcon" src="assets/Group.svg" alt="info" class="cursor-pointer">
+                                        <img id="trashIcon" src="assets/Trash 1.svg" alt="trash" class="cursor-pointer">
+                                        <!-- ! Hew we have to work -->
+                                         <!-- ? Delete Popup Start -->
+                                          <div id="popup" class="hidden fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-[999999]">
+                                            <div class="rounded-3xl sm:mx-0 mx-10  p-8 bg-white space-y-[18px] relative">
+                                              <div class="text-center space-y-2">
+                                                <!-- Close button -->
+                                                <img class="closePopup absolute right-4 top-4 cursor-pointer" src="assets/closeBtn.svg" alt="Close">
+                                                <!-- Popup content -->
+                                                <img class="mx-auto" src="assets/deletePopup.svg" alt="">
+                                                <div class="font-extrabold text-[20px] text-Midnight_Blue">Delete</div>
+                                                <p class="font-normal text-sm text-grey-3">Are you sure you want to remove this service?</p>
+                                              </div>
+                                              <div class="grid grid-cols-2 gap-2">
+                                                <button class="closePopup py-[10px] px-4 text-white bg-Midnight_Blue rounded-[30px]">No</button>
+                                                <button class="py-[10px] px-4 bg-grey-5 text-Midnight_Blue rounded-[30px]">Yes</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                         <!--  ? Delete Popup End -->
+                                         <!-- ? Info Popup Start -->
+                                         <div  id="infoPopup" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center  px-10 z-[999999]">
+                                            <div class="rounded-3xl sm:p-8 p-5 bg-white relative overflow-hidden h-[90%] lg:w-[75%] md:w-[90%] w-[100%]">
+                                                <img class="infoClosePopup absolute right-4 top-4 cursor-pointer" src="assets/closeBtn.svg" alt="Close">
+                                                <div>
+                                                    <h4 class="font-extrabold text-[20px] mb-2 text-Midnight_Blue">Low energy lighting</h4>
+                                                    <p class="font-normal text-sm text-grey-3">Fitting your home with low energy lighting reduces your energy bills by up to 90% (Kellwood Lighting), with no compromises on quality. Your home’s carbon footprint can also be substantially reduced through this change.</p>
+                                                </div>
+                                                <div class="grid md:grid-cols-2 grid-cols-1 gap-[18px] py-5">
+                                                    <div class="rounded-2xl p-5 bg-grey-5">
+                                                        <h5 class="font-extrabold text-sm text-Midnight_Blue">KEY BENEFITS</h5>
+                                                        <ul class="list-disc ms-5 mt-3">
+                                                            <li class="font-normal text-sm text-grey-7">Reduces carbon dioxide emissions</li>
+                                                            <li class="font-normal text-sm text-grey-7">Lower energy bills</li>
+                                                            <li class="font-normal text-sm text-grey-7">Improve EPC rating</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="rounded-2xl p-5 bg-grey-5">
+                                                        <h5 class="font-extrabold text-sm text-coral">CONSIDERATIONS</h5>
+                                                        <ul class="list-disc ms-5 mt-3">
+                                                            <li class="font-normal text-sm text-grey-7">Possibly rewiring required</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="rounded-2xl p-5 bg-grey-5">
+                                                    <h5 class="font-extrabold text-sm text-turquoise mb-3">ESIMATED COSTS</h5>
+                                                    <p class="font-normal text-sm text-grey-7">Switching to low energy lighting can save up to £13 per light bulb per year, reducing the average annual UK electricity bill of £670 (Boiler Guide) significantly. Alongside the direct cut to your energy bills, low energy lighting is cheaper to maintain and run long term.</p>
+                                                </div>
+                                                <div class="py-5">
+                                                    <h5 class="font-semibold text-[16px] text-Midnight_Blue mb-[10px]">Description</h5>
+                                                    <p class="font-normal text-sm text-grey-3 mb-[10px]">Low energy lighting was developed as an alternative to the costly and damaging incandescent and halogen lighting options. It comes in two main products: LEDs and CFLs. CFLs use between 70 and 80% (Energy Saving Trust) less electricity than older bulbs, while LEDs are even more efficient. Although they are more expensive to purchase initially, the cost of low energy lighting is far lower in the long term. This is a result of low energy lighting lasting longer and being cheaper to run. These benefits are complemented by the diminished environmental impact. Obviously, the less energy needed to run this lighting immediately reduces the carbon footprint of your home. Low energy lighting also has several other environmental benefits, furthering the advantages of this switch. LEDs in particular reduce light pollution due to their directional light, especially useful in dark sky areas. They also don’t emit UV radiation or contain any mercury, both of which can be damaging.</p>
+                                                    <p class="font-normal text-sm text-grey-3 mb-[10px]">The relatively easy installation of low energy lighting makes it a viable option for property owners looking to improve their EPC rating at a low cost with no compromises on comfort.</p>
+                                                </div>
+                                               
+                                            </div>
+                                         </div>
+                                         <!-- ? Info Popup End -->
                                     </div>
                                 </div>
                                 <div class="px-3 mt-4 lg:hidden grid grid-cols-2 gap-4">

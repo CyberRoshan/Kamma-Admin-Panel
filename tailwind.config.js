@@ -24,7 +24,6 @@ module.exports = {
         'green': "#68C23D",
         'custom-red': "#D72121",
         'custom-gray': 'rgba(180, 180, 180, 0.2)',
-        
       },
       boxShadow: {
         "custom-orange": "0 4px 6px -1px rgba(243, 161, 83, 0.13)",

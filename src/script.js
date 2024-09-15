@@ -249,3 +249,31 @@ $(document).ready(function(){
   });
 });
 // ! Insulated Yes | No | Unknown Button End
+
+// ! Trash Button Pop Up Start
+$(document).ready(function() {
+  // Show the popup when the trash icon is clicked
+  $('#trashIcon').click(function() {
+    $('#popup').removeClass('hidden').addClass('flex'); // Show popup
+  });
+
+  // Close the popup when the close button is clicked
+  $('.closePopup').click(function() {
+    $('#popup').removeClass('flex').addClass('hidden'); // Hide popup
+  });
+});
+// ! Trash Button Pop Up End
+
+// ! Info Button Pop Up Start
+ $(document).ready(function() {
+      // Show the info popup when the info icon is clicked
+      $('#infoIcon').click(function() {
+        $('#infoPopup').removeClass('hidden').addClass('flex'); // Show popup
+      });
+
+      // Close the info popup when the close button is clicked
+      $('.infoClosePopup').click(function() {
+        $('#infoPopup').removeClass('flex').addClass('hidden'); // Hide popup
+      });
+    });
+// ! Info Button Pop Up End
