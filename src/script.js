@@ -236,37 +236,90 @@ $(document).ready(function () {
 // ! Radio Btn Card End
 
 // ! Insulated Yes | No | Unknown Button Start
-$(document).ready(function(){
-  $('.option-btn').click(function(){
-      $('.option-btn').removeClass('bg-turquoise-rgba border-turquoise')
-                      .addClass('border-grey-2 text-black bg-transparent');
-      
-      $(this).removeClass('border-grey-2 text-black bg-transparent')
-             .addClass('bg-turquoise-rgba border-turquoise');
+$(document).ready(function () {
+  $(".option-btn").click(function () {
+    $(".option-btn")
+      .removeClass("bg-turquoise-rgba border-turquoise")
+      .addClass("border-grey-2 text-black bg-transparent");
+
+    $(this)
+      .removeClass("border-grey-2 text-black bg-transparent")
+      .addClass("bg-turquoise-rgba border-turquoise");
   });
 });
 // ! Insulated Yes | No | Unknown Button End
 
 // ! Trash Button Pop Up Start
-$(document).ready(function() {
-  $('#trashIcon').click(function() {
-    $('#popup').removeClass('hidden').addClass('flex'); 
+$(document).ready(function () {
+  $(".trash-icon").on("click", function () {
+    $("#popup").removeClass("hidden").addClass("flex");
   });
 
-  $('.closePopup').click(function() {
-    $('#popup').removeClass('flex').addClass('hidden'); 
+  $(".closePopup, .confirmDelete").on("click", function () {
+    $("#popup").addClass("hidden");
+
+    if ($(this).hasClass("confirmDelete")) {
+      console.log("Item deleted");
+    }
   });
 });
-// ! Trash Button Pop Up End
-
+// ! Trash Button Pop Up Start
 // ! Info Button Pop Up Start
- $(document).ready(function() {
-      $('#infoIcon').click(function() {
-        $('#infoPopup').removeClass('hidden').addClass('flex');
-      });
+$(document).ready(function () {
+  $(".info-icon").on("click", function () {
+    $("#infoPopup").removeClass("hidden").addClass("flex");
+  });
 
-      $('.infoClosePopup').click(function() {
-        $('#infoPopup').removeClass('flex').addClass('hidden');
-      });
-    });
+  $(".infoClosePopup").on("click", function () {
+    $("#infoPopup").addClass("hidden");
+  });
+});
 // ! Info Button Pop Up End
+
+// ! Radio Set Goal Card Start
+$(document).ready(function () {
+  $(".GoalCard").click(function () {
+    $(".GoalCard")
+      .removeClass("border-turquoise opacity-[100%]")
+      .addClass("border-[rgba(0, 0, 0, 0.13)] opacity-[50%]");
+
+    $(this)
+      .removeClass("border-[rgba(0, 0, 0, 0.13)] opacity-[50%]")
+      .addClass("border-turquoise opacity-[100%]");
+  });
+});
+// ! Radio Set Goal Card End
+
+// ! Range Slider Start
+$(document).ready(function () {
+  const settings = {
+    fillColor: "#1e3a8a", // Midnight Blue
+    background: "#d9d9d9",
+  };
+
+  const slider = $("#range-slider-val");
+  const fill = $("#fill");
+  const sliderHandle = $("#slider-handle");
+
+  function applyFill() {
+    const percentage =
+      (100 * (slider.val() - slider.attr("min"))) /
+      (slider.attr("max") - slider.attr("min"));
+
+    // Update fill width
+    fill.css("width", `${percentage}%`); // Fill the background
+
+    // Adjust the handle position
+    const handlePosition = (percentage / 100) * (slider.width() - 5); // 5 to center the handle
+    sliderHandle.css("left", handlePosition);
+
+    // Ensure fill color is empty at zero
+    if (slider.val() === slider.attr("min")) {
+      fill.css("width", "0%"); // Make fill empty at zero
+    }
+  }
+
+  slider.on("input", applyFill);
+  applyFill(); // Apply fill on initial load
+});
+// ! Range Slider End

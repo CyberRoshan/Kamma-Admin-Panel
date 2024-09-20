@@ -249,8 +249,8 @@
                                     </div>
                                     <!-- ! Main Popup Info and Trash Start -->
                                     <div class="flex sm:gap-4 gap-2">
-                                        <img id="infoIcon" src="assets/Group.svg" alt="info" class="cursor-pointer">
-                                        <img id="trashIcon" src="assets/Trash 1.svg" alt="trash" class="cursor-pointer">
+                                        <img id="infoIcon" src="assets/Group.svg" alt="info" class="info-icon cursor-pointer">
+                                        <img id="trashIcon" src="assets/Trash 1.svg" alt="trash" class="trash-icon cursor-pointer">
                                          <!-- ? Delete Popup Start -->
                                           <div id="popup" class="hidden fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-[999999]">
                                             <div class="rounded-3xl sm:mx-0 mx-10  p-8 bg-white space-y-[18px] relative">
@@ -264,14 +264,14 @@
                                               </div>
                                               <div class="grid grid-cols-2 gap-2">
                                                 <button class="closePopup py-[10px] px-4 text-white bg-Midnight_Blue rounded-[30px]">No</button>
-                                                <button class="py-[10px] px-4 bg-grey-5 text-Midnight_Blue rounded-[30px]">Yes</button>
+                                                <button class="confirmDelete py-[10px] px-4 bg-grey-5 text-Midnight_Blue rounded-[30px]">Yes</button>
                                               </div>
                                             </div>
                                           </div>
                                          <!--  ? Delete Popup End -->
                                          <!-- ? Info Popup Start -->
                                          <div  id="infoPopup" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center  px-10 z-[999999]">
-                                            <div class="rounded-3xl sm:p-8 p-5 bg-white relative overflow-hidden h-[90%] lg:w-[75%] md:w-[90%] w-[100%]">
+                                            <div class="scrollbar-hide rounded-3xl sm:p-8 p-5 bg-white relative overflow-y-scroll h-[90%] lg:w-[75%] md:w-[90%] w-[100%]">
                                                 <img class="infoClosePopup absolute right-4 top-4 cursor-pointer" src="assets/closeBtn.svg" alt="Close">
                                                 <div>
                                                     <h4 class="font-extrabold text-[20px] mb-2 text-Midnight_Blue">Low energy lighting</h4>
@@ -302,12 +302,17 @@
                                                     <p class="font-normal text-sm text-grey-3 mb-[10px]">Low energy lighting was developed as an alternative to the costly and damaging incandescent and halogen lighting options. It comes in two main products: LEDs and CFLs. CFLs use between 70 and 80% (Energy Saving Trust) less electricity than older bulbs, while LEDs are even more efficient. Although they are more expensive to purchase initially, the cost of low energy lighting is far lower in the long term. This is a result of low energy lighting lasting longer and being cheaper to run. These benefits are complemented by the diminished environmental impact. Obviously, the less energy needed to run this lighting immediately reduces the carbon footprint of your home. Low energy lighting also has several other environmental benefits, furthering the advantages of this switch. LEDs in particular reduce light pollution due to their directional light, especially useful in dark sky areas. They also don’t emit UV radiation or contain any mercury, both of which can be damaging.</p>
                                                     <p class="font-normal text-sm text-grey-3 mb-[10px]">The relatively easy installation of low energy lighting makes it a viable option for property owners looking to improve their EPC rating at a low cost with no compromises on comfort.</p>
                                                 </div>
+                                                <div class="py-5">
+                                                    <h5 class="font-semibold text-[16px] text-Midnight_Blue mb-[10px]">Key Benefits</h5>
+                                                    <p class="font-normal text-sm text-grey-3 mb-[10px]">Low energy lighting was developed as an alternative to the costly and damaging incandescent and halogen lighting options. It comes in two main products: LEDs and CFLs. CFLs use between 70 and 80% (Energy Saving Trust) less electricity than older bulbs, while LEDs are even more efficient. Although they are more expensive to purchase initially, the cost of low energy lighting is far lower in the long term. This is a result of low energy lighting lasting longer and being cheaper to run. These benefits are complemented by the diminished environmental impact. Obviously, the less energy needed to run this lighting immediately reduces the carbon footprint of your home. Low energy lighting also has several other environmental benefits, furthering the advantages of this switch. LEDs in particular reduce light pollution due to their directional light, especially useful in dark sky areas. They also don’t emit UV radiation or contain any mercury, both of which can be damaging.</p>
+                                                    <p class="font-normal text-sm text-grey-3 mb-[10px]">The relatively easy installation of low energy lighting makes it a viable option for property owners looking to improve their EPC rating at a low cost with no compromises on comfort.</p>
+                                                </div>
                                                
                                             </div>
                                          </div>
                                          <!-- ? Info Popup End -->
                                     </div>
-                                        <!-- ! Main Popup Info and Trash End -->
+                                    <!-- ! Main Popup Info and Trash End -->
                                 </div>
                                 <div class="px-3 mt-4 lg:hidden grid grid-cols-2 gap-4">
                                     <div class="">
@@ -341,8 +346,8 @@
                                         <div class="w-[82px] font-normal text-16px text-center">0.12</div>
                                     </div>
                                     <div class="flex sm:gap-4 gap-2">
-                                        <img src="assets/Group.svg" alt="info">
-                                        <img src="assets/Trash 1.svg" alt="trash">
+                                        <img id="infoIcon" src="assets/Group.svg" alt="info" class="info-icon cursor-pointer">
+                                        <img id="trashIcon" src="assets/Trash 1.svg" alt="trash" class="trash-icon cursor-pointer">
                                     </div>
                                 </div>
                                 <div class="px-3 mt-4 lg:hidden grid grid-cols-2 gap-4">
@@ -377,8 +382,8 @@
                                         <div class="w-[82px] font-normal text-16px text-center">0.12</div>
                                     </div>
                                     <div class="flex sm:gap-4 gap-2">
-                                        <img src="assets/Group.svg" alt="info">
-                                        <img src="assets/Trash 1.svg" alt="trash">
+                                        <img id="infoIcon" src="assets/Group.svg" alt="info" class="info-icon cursor-pointer">
+                                        <img id="trashIcon" src="assets/Trash 1.svg" alt="trash" class="trash-icon cursor-pointer">
                                     </div>
                                 </div>
                                 <div class="px-3 mt-4 lg:hidden grid grid-cols-2 gap-4">
@@ -413,8 +418,8 @@
                                         <div class="w-[82px] font-normal text-16px text-center">0.12</div>
                                     </div>
                                     <div class="flex sm:gap-4 gap-2">
-                                        <img src="assets/Group.svg" alt="info">
-                                        <img src="assets/Trash 1.svg" alt="trash">
+                                        <img id="infoIcon" src="assets/Group.svg" alt="info" class="info-icon cursor-pointer">
+                                        <img id="trashIcon" src="assets/Trash 1.svg" alt="trash" class="trash-icon cursor-pointer">
                                     </div>
                                 </div>
                                 <div class="px-3 mt-4 lg:hidden grid grid-cols-2 gap-4">
