@@ -292,34 +292,32 @@ $(document).ready(function () {
 
 // ! Range Slider Start
 $(document).ready(function () {
-  const settings = {
-    fillColor: "#1e3a8a", // Midnight Blue
-    background: "#d9d9d9",
-  };
-
   const slider = $("#range-slider-val");
   const fill = $("#fill");
   const sliderHandle = $("#slider-handle");
 
   function applyFill() {
+    // Calculate percentage of the range slider value
     const percentage =
       (100 * (slider.val() - slider.attr("min"))) /
       (slider.attr("max") - slider.attr("min"));
 
-    // Update fill width
-    fill.css("width", `${percentage}%`); // Fill the background
+    // Update the fill width according to the percentage
+    fill.css("width", `${percentage}%`);
 
-    // Adjust the handle position
-    const handlePosition = (percentage / 100) * (slider.width() - 5); // 5 to center the handle
-    sliderHandle.css("left", handlePosition);
-
-    // Ensure fill color is empty at zero
-    if (slider.val() === slider.attr("min")) {
-      fill.css("width", "0%"); // Make fill empty at zero
-    }
+    // Dynamically calculate handle position and ensure it's centered
+    const handlePosition =
+      (percentage / 100) * (slider.width() - sliderHandle.width());
+    sliderHandle.css("left", `${handlePosition}px`);
   }
 
+  // Apply the fill and handle positioning on input
   slider.on("input", applyFill);
-  applyFill(); // Apply fill on initial load
+
+  // Handle responsiveness when window resizes
+  $(window).on("resize", applyFill);
+
+  // Apply fill on initial load
+  applyFill();
 });
 // ! Range Slider End
